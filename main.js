@@ -32,10 +32,10 @@ function handleOrientation(event) {
   // It center the positioning point to the center of the ball
   // ball.style.top  = (maxY*y/180 - 10) + "px";
   // ball.style.left = (maxX*x/180 - 10) + "px";
-  ball.style.left  = (maxY*y/180 - 10) + "px";
-  ball.style.top = (maxX*x/180 - 10) + "px";
-  // ball.style.left  = Math.floor((y/180)*100) + "vw";
-  // ball.style.top = Math.floor((x/180)*100) + "vh";
+  // ball.style.left  = (maxY*y/180 - 10) + "px";
+  // ball.style.top = (maxX*x/180 - 10) + "px";
+  ball.style.left  = Math.floor((y/180)*100) + "vw";
+  ball.style.top = Math.floor((x/180)*100) + "vh";
 
   
   // console.log('X is: ',ball.style.left, 'Y is: ', ball.style.top);
