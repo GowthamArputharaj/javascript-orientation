@@ -34,10 +34,20 @@ function handleOrientation(event) {
   // ball.style.left = (maxX*x/180 - 10) + "px";
   ball.style.left  = (maxY*y/180 - 10) + "px";
   ball.style.top = (maxX*x/180 - 10) + "px";
+  // ball.style.left  = Math.floor((y/180)*100) + "vw";
+  // ball.style.top = Math.floor((x/180)*100) + "vh";
+
+  
+  // console.log('X is: ',ball.style.left, 'Y is: ', ball.style.top);
+
+
+  // ball.style.left  = (maxY*y/180 - 10) + "hw";
+  // ball.style.top = (maxX*x/180 - 10) + "vh";
 }
 
 window.addEventListener('deviceorientation', handleOrientation);
 
+// for background colors
 var checkboxStatus = document.createElement('input');
 checkboxStatus.setAttribute('type', 'checkbox');
 checkboxStatus.setAttribute('id', 'status');
